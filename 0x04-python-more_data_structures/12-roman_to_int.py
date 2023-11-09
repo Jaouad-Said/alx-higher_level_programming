@@ -17,4 +17,3 @@ def roman_to_int(roman_string):
             value_int -= previous_value
 
     return value_int
-
