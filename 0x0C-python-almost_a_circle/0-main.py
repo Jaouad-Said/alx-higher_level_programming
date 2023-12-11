@@ -16,5 +16,5 @@ if __name__ == "__main__":
     base4 = Base(12)
     print(base4.id)
 
-    base5 = Base()
-    print(base5.id)
+    b5 = Base()
+    print(b5.id)
