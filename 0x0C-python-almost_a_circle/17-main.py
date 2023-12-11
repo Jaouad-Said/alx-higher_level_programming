@@ -4,11 +4,11 @@ from models.rectangle import Rectangle
 
 if __name__ == "__main__":
 
-    r1 = Rectangle(3, 5, 1)
-    r1_dictionary = r1.to_dictionary()
-    r2 = Rectangle.create(**r1_dictionary)
-    print(r1)
-    print(r2)
-    print(r1 is r2)
-    print(r1 == r2)
+    rec1 = Rectangle(3, 5, 1)
+    rec1_dictionary = rec1.to_dictionary()
+    rec2 = Rectangle.create(**rec1_dictionary)
+    print(rec1)
+    print(rec2)
+    print(rec1 is rec2)
+    print(rec1 == rec2)
 

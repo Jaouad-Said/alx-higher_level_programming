@@ -34,19 +34,19 @@ class TestRectangle_instantiation(unittest.TestCase):
             Rectangle(1)
 
     def test_two_args(self):
-        r1 = Rectangle(10, 2)
-        r2 = Rectangle(2, 10)
-        self.assertEqual(r1.id, r2.id - 1)
+        rec1 = Rectangle(10, 2)
+        rec2 = Rectangle(2, 10)
+        self.assertEqual(rec1.id, rec2.id - 1)
 
     def test_three_args(self):
-        r1 = Rectangle(2, 2, 4)
-        r2 = Rectangle(4, 4, 2)
-        self.assertEqual(r1.id, r2.id - 1)
+        rec1 = Rectangle(2, 2, 4)
+        rec2 = Rectangle(4, 4, 2)
+        self.assertEqual(rec1.id, rec2.id - 1)
 
     def test_four_args(self):
-        r1 = Rectangle(1, 2, 3, 4)
-        r2 = Rectangle(4, 3, 2, 1)
-        self.assertEqual(r1.id, r2.id - 1)
+        rec1 = Rectangle(1, 2, 3, 4)
+        rec2 = Rectangle(4, 3, 2, 1)
+        self.assertEqual(rec1.id, rec2.id - 1)
 
     def test_five_args(self):
         self.assertEqual(7, Rectangle(10, 2, 0, 0, 7).id)
@@ -790,10 +790,10 @@ class TestRectangle_to_dictionary(unittest.TestCase):
         self.assertDictEqual(correct, r.to_dictionary())
 
     def test_to_dictionary_no_object_changes(self):
-        r1 = Rectangle(10, 2, 1, 9, 5)
-        r2 = Rectangle(5, 9, 1, 2, 10)
-        r2.update(**r1.to_dictionary())
-        self.assertNotEqual(r1, r2)
+        rec1 = Rectangle(10, 2, 1, 9, 5)
+        rec2 = Rectangle(5, 9, 1, 2, 10)
+        rec2.update(**rec1.to_dictionary())
+        self.assertNotEqual(rec1, rec2)
 
     def test_to_dictionary_arg(self):
         r = Rectangle(10, 2, 4, 1, 2)

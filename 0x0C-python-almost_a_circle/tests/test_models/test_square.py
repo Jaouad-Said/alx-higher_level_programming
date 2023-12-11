@@ -33,19 +33,19 @@ class TestSquare_instantiation(unittest.TestCase):
             Square()
 
     def test_one_arg(self):
-        s1 = Square(10)
-        s2 = Square(11)
-        self.assertEqual(s1.id, s2.id - 1)
+        squ1 = Square(10)
+        squ2 = Square(11)
+        self.assertEqual(squ1.id, squ2.id - 1)
 
     def test_two_args(self):
-        s1 = Square(10, 2)
-        s2 = Square(2, 10)
-        self.assertEqual(s1.id, s2.id - 1)
+        squ1 = Square(10, 2)
+        squ2 = Square(2, 10)
+        self.assertEqual(squ1.id, squ2.id - 1)
 
     def test_three_args(self):
-        s1 = Square(10, 2, 2)
-        s2 = Square(2, 2, 10)
-        self.assertEqual(s1.id, s2.id - 1)
+        squ1 = Square(10, 2, 2)
+        squ2 = Square(2, 2, 10)
+        self.assertEqual(squ1.id, squ2.id - 1)
 
     def test_four_args(self):
         self.assertEqual(7, Square(10, 2, 2, 7).id)
@@ -642,10 +642,10 @@ class TestSquare_to_dictionary(unittest.TestCase):
         self.assertDictEqual(correct, s.to_dictionary())
 
     def test_to_dictionary_no_object_changes(self):
-        s1 = Square(10, 2, 1, 2)
-        s2 = Square(1, 2, 10)
-        s2.update(**s1.to_dictionary())
-        self.assertNotEqual(s1, s2)
+        squ1 = Square(10, 2, 1, 2)
+        squ2 = Square(1, 2, 10)
+        squ2.update(**squ1.to_dictionary())
+        self.assertNotEqual(squ1, squ2)
 
     def test_to_dictionary_arg(self):
         s = Square(10, 10, 10, 10)

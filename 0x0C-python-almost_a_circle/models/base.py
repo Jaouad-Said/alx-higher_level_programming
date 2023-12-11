@@ -158,7 +158,7 @@ class Base:
                 turt.left(90)
             turt.hideturtle()
 
-        turt.color("#b5e3d8")
+        turt.color("#base5e3d8")
         for sq in list_squares:
             turt.showturtle()
             turt.up()
