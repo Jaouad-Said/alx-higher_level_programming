@@ -4,21 +4,21 @@ from models.rectangle import Rectangle
 
 if __name__ == "__main__":
 
-    rec1 = Rectangle(10, 10, 10, 10)
-    print(rec1)
+    r1 = Rectangle(10, 10, 10, 10)
+    print(r1)
 
-    rec1.update(89)
-    print(rec1)
+    r1.update(89)
+    print(r1)
 
-    rec1.update(89, 2)
-    print(rec1)
+    r1.update(89, 2)
+    print(r1)
 
-    rec1.update(89, 2, 3)
-    print(rec1)
+    r1.update(89, 2, 3)
+    print(r1)
 
-    rec1.update(89, 2, 3, 4)
-    print(rec1)
+    r1.update(89, 2, 3, 4)
+    print(r1)
 
-    rec1.update(89, 2, 3, 4, 5)
-    print(rec1)
+    r1.update(89, 2, 3, 4, 5)
+    print(r1)
 

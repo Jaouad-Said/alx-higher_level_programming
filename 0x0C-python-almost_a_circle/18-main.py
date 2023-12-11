@@ -5,9 +5,9 @@ from models.square import Square
 
 if __name__ == "__main__":
 
-    rec1 = Rectangle(10, 7, 2, 8)
-    rec2 = Rectangle(2, 4)
-    list_rectangles_input = [rec1, rec2]
+    r1 = Rectangle(10, 7, 2, 8)
+    r2 = Rectangle(2, 4)
+    list_rectangles_input = [r1, r2]
 
     Rectangle.save_to_file(list_rectangles_input)
 
@@ -24,9 +24,9 @@ if __name__ == "__main__":
     print("---")
     print("---")
 
-    squ1 = Square(5)
-    squ2 = Square(7, 9, 1)
-    list_squares_input = [squ1, squ2]
+    s1 = Square(5)
+    s2 = Square(7, 9, 1)
+    list_squares_input = [s1, s2]
 
     Square.save_to_file(list_squares_input)
 
